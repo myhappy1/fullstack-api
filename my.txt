@@ -1,0 +1,25 @@
+movies.csv 파일이 메인 데이터 프레임 
+- links.csv , ratings.csv 는 정보를 추가하는 역할
+전처리 과정을  거친 최종 파일: movies_final.csv
+
+movies.csv
+: movieId, title, generes
+
+movie_final.csv
+: movieId, title,generes, url,poster_path, imdbId,
+ tmdId,rating_count, rating_avg
+
+ b18e798ff377ef49f1c335283e7c43d6
+ themovie 사이트 인증키 0d1228a6e3b2e2cbd8dd8c61420346c5
+
+ https://www.imdb.com/title/tt20216624/
+
+ https://www.themoviedb.org/signup
+
+
+#백엔드 aPI 엔드 포인트
+- https://mybackend.org => 실제 서버의 주소(AWS,pythonanywhere) => localhost:8000 => dev서버의 메인주소
+- localhost:8000/all, localhost:8000/Genres localhost:8000/Item based, localhost:8000/ User based
+- all: 랜덤으로 몇 개만, generes: 특정 장르의 영화를 반환,
+  Item based과 User based => 추천시스템으로 만든 추천 엔진의 결과를 반환
+- backend : FastAPI => pip install FastAPI
